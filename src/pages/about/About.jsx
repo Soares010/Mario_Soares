@@ -1,7 +1,19 @@
 import React from "react";
 import Container from "../../components/Container";
+import expressIcon from "../../assets/images/express.png";
+import csharpIcon from "../../assets/images/csharp.png";
+import mysqlIcon from "../../assets/images/mysql.png";
+import mongodb from "../../assets/images/mongodb.png";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCss3,
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faPhp,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   return (
@@ -76,18 +88,18 @@ const About = () => {
               <div className="content-info">
                 <div className="grid">
                   <div>
-                    <h1>12+</h1>
-                    <span>---- Anos de experiência</span>
+                    <h1>04+</h1>
+                    <span>---- Anos de Experiência</span>
                   </div>
                   <div>
-                    <h1>12+</h1>
-                    <span>---- Anos de experiência</span>
+                    <h1>05+</h1>
+                    <span>---- Projectos Finalizados</span>
                   </div>
                 </div>
                 <div className="grid">
                   <div>
-                    <h1>12+</h1>
-                    <span>---- Anos de experiência</span>
+                    <h1>03+</h1>
+                    <span>---- Trabalhos Freelancer</span>
                   </div>
                   <div>
                     <h1>12+</h1>
@@ -96,10 +108,146 @@ const About = () => {
                 </div>
               </div>
             </div>
-
             <div className="line-gray"></div>
             <div className="my-skills">
-              1
+              <h4>Minhas Habilidades</h4>
+              <div className="container">
+                <div className="inner-content">
+                  <h3>Front-end</h3>
+                  <div className="grid">
+                    <div>
+                      <h1>80%</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faHtml5}
+                          style={{ color: "#E34F26", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>HTML5</label>
+                    </div>
+                    <div>
+                      <h1>60%</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faCss3}
+                          style={{ color: "#1572B6", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>CSS3</label>
+                    </div>
+                  </div>
+                  <div className="grid">
+                    <div>
+                      <h1>66%</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faJs}
+                          style={{ color: "#F7DF1E", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>JS</label>
+                    </div>
+                    <div>
+                      <h1>12+</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faReact}
+                          style={{ color: "#61DAFB", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>React JS</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="inner-content">
+                  <h3>Back-end</h3>
+                  <div className="grid">
+                    <div>
+                      <h1>50%</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faNodeJs}
+                          style={{ color: "#339933", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>Node JS</label>
+                    </div>
+                    <div>
+                      <h1>50%</h1>
+                      <span>
+                        <img
+                          src={expressIcon}
+                          style={{
+                            fontSize: "28px",
+                            width: "30px",
+                            height: "30px",
+                          }}
+                        />
+                      </span>
+                      <label>Express JS</label>
+                    </div>
+                  </div>
+                  <div className="grid">
+                    <div>
+                      <h1>80%</h1>
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faPhp}
+                          style={{ color: "#777BB4", fontSize: "28px" }}
+                        />
+                      </span>
+                      <label>PHP 8</label>
+                    </div>
+                    <div>
+                      <h1>50%</h1>
+                      <span>
+                        <img
+                          src={csharpIcon}
+                          style={{
+                            fontSize: "28px",
+                            width: "30px",
+                            height: "30px",
+                          }}
+                        />
+                      </span>
+                      <label>C#</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="inner-content">
+                  <h3>Bancos de dados</h3>
+                  <div className="grid">
+                    <div>
+                      <h1>80%</h1>
+                      <span>
+                        <img
+                          src={mysqlIcon}
+                          style={{
+                            fontSize: "28px",
+                            width: "40px",
+                            height: "40px",
+                          }}
+                        />
+                      </span>
+                      <label>Mysql</label>
+                    </div>
+                    <div>
+                      <h1>40%</h1>
+                      <span>
+                        <img
+                          src={mongodb}
+                          style={{
+                            fontSize: "28px",
+                            width: "40px",
+                            height: "40px",
+                          }}
+                        />
+                      </span>
+                      <label>Mongo DB</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

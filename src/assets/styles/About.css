@@ -1,5 +1,5 @@
 .inner-content {
-  height: 100vh;
+  height: 100%;
   /* border: 1px solid red; */
 }
 #about {
@@ -18,7 +18,7 @@
   color: #8f40e9;
 }
 #about .main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   /* max-width: 600px; */
   /* min-width: 500px; */
@@ -41,7 +41,7 @@
   padding: 20px 40px;
   max-width: 1200px;
 }
-#about .main .my-info .content-info .inner-text h4{
+#about .main .my-info .content-info .inner-text h4 {
   color: #eee;
   font-size: 14px;
   font-weight: 400;
@@ -49,17 +49,17 @@
 #about .main .my-info .content-info div {
   margin: 10px 0;
 }
-#about .main .my-info .content-info div span{
+#about .main .my-info .content-info div span {
   color: #777;
   font-size: 13px;
 }
-#about .main .my-info .content-info div span label{
+#about .main .my-info .content-info div span label {
   color: #eee;
 }
 #about .main .my-info .content-info .btn-download {
- margin: 0 0 40px 0;
+  margin: 0 0 40px 0;
 }
-#about .main .my-info .content-info .btn-download a{
+#about .main .my-info .content-info .btn-download a {
   /* border: 1px solid red; */
   background: transparent;
   display: flex;
@@ -75,8 +75,8 @@
   cursor: pointer;
   position: absolute;
 }
-#about .main .my-info .content-info .btn-download a span{
-   position: relative;
+#about .main .my-info .content-info .btn-download a span {
+  position: relative;
   border-radius: 50%;
   margin: 0 0 0 5px;
   width: 30px;
@@ -88,25 +88,86 @@
   align-items: center;
   float: right;
   left: 5px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-#about .main .my-info .content-info:nth-child(2){
+#about .main .my-info .content-info:nth-child(2) {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: grid;
 }
-#about .main .my-info .content-info:nth-child(2) .grid{
+#about .main .my-info .content-info:nth-child(2) .grid {
   /* border: 1px solid red; */
 }
-#about .main .my-info .content-info:nth-child(2) .grid div{
+#about .main .my-info .content-info:nth-child(2) .grid div {
   border: 1px solid #777;
   padding: 30px 40px;
   margin: 0 0 10px 0;
   border-radius: 5px;
 }
-#about .main .my-info .content-info:nth-child(2) .grid div h1{ 
+#about .main .my-info .content-info:nth-child(2) .grid div h1 {
   color: #8f40e9;
 }
-#about .main .my-info .content-info:nth-child(2) .grid div span{ 
+#about .main .my-info .content-info:nth-child(2) .grid div span {
+  color: #eee;
+}
+#about .main .line-gray {
+  border: 0.5px solid #b8b8b8;
+  width: 300px;
+  margin: 0 auto;
+}
+#about .main .my-skills h4 {
+  margin: 0 auto;
+  text-align: center;
+  color: #eee;
+  font-size: 13px;
+  font-weight: 300;
+  /* border: 1px solid red; */
+}
+#about .main .my-skills .container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#about .main .my-skills .container .inner-content{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 10px;
+}
+#about .main .my-skills .container .inner-content h3{
+  /* border: 1px solid red; */
+  color: #eee;
+  margin: 0 0 10px 0;
+}
+#about .main .my-skills .container .inner-content div h1{
+  /* border: 1px solid red; */
+  color: #8f40e9;
+  font-size: 14px;
+}
+#about .main .my-skills .container .inner-content .grid{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 10px;
+}
+#about .main .my-skills .container .inner-content .grid div{
+  border: 1px solid #777;
+  /* padding: 30px 60px; */
+  width: 170px;
+  height: 100px;
+  margin: 0 10px 10px 0;
+  border-radius: 5px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .main .my-skills .container .inner-content .grid div label{
   color: #eee;
 }
