@@ -1,11 +1,12 @@
 import React from 'react';
+import Section from "../../components/Section";
 
 const About = () => {
-    return (
-        <div>
-            Sobre mim
-        </div>
-    );
-}
+  return (
+    <div>
+      <Section />
+    </div>
+  );
+};
 
 export default About;

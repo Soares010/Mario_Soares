@@ -18,6 +18,9 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import Button from "./Button";
+import Li from "./Li";
+import LinkButton from "./LinkButton";
 
 const NavBar = () => {
   const [text] = useTypewriter({
@@ -31,25 +34,25 @@ const NavBar = () => {
       id: 1,
       name: "Home",
       icon: <FontAwesomeIcon icon={faHomeAlt} />,
-      path: "/",
+      path: "",
     },
     {
       id: 2,
       name: "Sobre mim",
       icon: <FontAwesomeIcon icon={faUser} />,
-      path: "/about",
+      path: "about",
     },
     {
       id: 3,
       name: "Projectos",
       icon: <FontAwesomeIcon icon={faFolder} />,
-      path: "/projects",
+      path: "projects",
     },
     {
       id: 4,
       name: "Contactos",
       icon: <FontAwesomeIcon icon={faPhone} />,
-      path: "/contact",
+      path: "contact",
     },
   ];
   return (
@@ -115,13 +118,13 @@ const NavBar = () => {
                 natus officiis sunt! Architecto, nam.
               </p>
               <div className="btn-content">
-                <button>
-                  <div>Mais sobre min</div>{" "}
+                <Button>
+                  <div>Mais sobre mim</div>{" "}
                   <span>
                     {" "}
                     <FontAwesomeIcon icon={faLongArrowRight} />
                   </span>
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -129,12 +132,11 @@ const NavBar = () => {
         <div className="nav_menu">
           <ul className="nav_list">
             {links.map(({ id, name, icon, path }) => (
-              <li className="nav_item" key={id}>
-                <a href={`#${path}`} className="nav_link" title={name}>
+              <Li className="nav_item" key={id}>
+                <LinkButton href={`#${path}`} className="nav_link" title={name}>
                   <span>{icon}</span>
-                  {/* <h4>{name}</h4> */}
-                </a>
-              </li>
+                </LinkButton>
+              </Li>
             ))}
           </ul>
         </div>

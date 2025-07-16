@@ -1,22 +1,15 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
+import About from "../about/About";
+import Projects from "../projects/Projects";
 
 function Home() {
-
-
-  // console.log(text);
-
   return (
     <>
       <div>
         <NavBar />
-        {/* <h1>
-          Eu sou
-          <span style={{ fontWeight: "bold", color: "green" }}> {text}</span>
-          <span style={{ color: "red" }}>
-            <Cursor />
-          </span>
-        </h1> */}
+        <About />
+        <Projects />
       </div>
     </>
   );
