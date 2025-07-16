@@ -1,5 +1,29 @@
+.social-medias{
+    /* border: 1px solid red; */
+    z-index: 1;
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+.social-medias .social{
+    /* border: 1px solid red; */
+    padding: 0 20px;
+    display: flex;
+}
+.social-medias .social div{
+    margin: 0 10px;
+    font-size: 16px;
+    /* padding: 10px; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    border-radius: 50%;
+}
 .nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +37,7 @@
   margin: 0 40px;
 }
 .nav .nav_menu {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   padding: 0 40px;
   height: 100%;
@@ -28,10 +52,10 @@
   transition: 0.5s ease-in-out;
 }
 .nav .nav_menu .nav_list a:hover {
-  color: #9382;
+  color: #8f40e9;
 }
 .name-title h4 {
-  font-size: 24px;
+  font-size: 28px;
   color: #8f40e9;
 }
 .name-title span {
@@ -46,44 +70,49 @@
   text-align: justify;
 }
 .text-content {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 490px;
+  width: 500px;
   padding: 40px;
 }
 .btn-content {
-  /* border: 1px solid red; */
   margin: 10px 0;
 }
 .btn-content button {
-  border: 1px solid red;
-  /* padding: 10px 30px; */
-  background: none;
+  background: transparent;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 0.5px solid #777;
-  /* border-radius: 40px; */
   padding: 0 5px;
   color: #fff;
   font-size: 12px;
+  border-radius: 50px;
   border-right: none;
-  justify-content: space-between;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+}
+.btn-content button div{
+ margin: 0 5px;
 }
 .btn-content button span {
-  /* border: 1px solid red; */
+  position: relative;
   border-radius: 50%;
   margin: 0 0 0 5px;
   width: 30px;
-  background: #8f40e9;
   height: 30px;
+  background: #8f40e9;
   display: flex;
   justify-content: center;
   align-items: center;
+  float: right;
+  left: 5px;
+  transition: .5s ease-in-out;
 }
-/* .nav .nav_menu .nav_list li.active a {
-  border: 1px solid red;
-} */
+.btn-content button span:hover{
+    background: #fff;
+    color: #8f40e9;
+}

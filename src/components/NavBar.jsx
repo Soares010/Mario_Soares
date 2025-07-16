@@ -12,6 +12,12 @@ import {
 import User from "../assets/images/eu.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import {
+  faGithub,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () => {
   const [text] = useTypewriter({
@@ -48,6 +54,43 @@ const NavBar = () => {
   ];
   return (
     <>
+      <div className="social-medias">
+        <div></div>
+        <div className="social">
+          <div>
+            <a href="https://www.facebook.com/marioneto.mn">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                style={{ color: "rgb(24, 119, 242)" }}
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ color: "rgb(225, 48, 108)" }}
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ color: "rgb(24, 23, 23)" }}
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                style={{ color: "rgb(37, 211, 102)" }}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
       <nav className="nav">
         <div className="image-content">
           <img src={User} alt="Eu" />
