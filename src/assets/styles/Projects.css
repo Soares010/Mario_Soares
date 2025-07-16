@@ -1,7 +1,13 @@
 .inner-content {
   height: 100vh;
-  border: 1px solid red;
 }
 #projects {
+  border: 1px solid red;
   /* scroll-margin-top: 100px; */
 }
+
+#projects .title {
+  text-align: center;
+  margin: 0 auto;
+}
+

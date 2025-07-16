@@ -1,9 +1,15 @@
 import React from "react";
 
-const Button = ({ children }) => {
+const Button = ({ children, handleClick }) => {
   return (
     <>
-      <button>{children}</button>
+      <button
+        onClick={
+          handleClick ? handleClick : () => console.log("Clicou no botão")
+        }
+      >
+        {children}
+      </button>
     </>
   );
 };

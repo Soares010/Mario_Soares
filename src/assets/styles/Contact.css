@@ -1,7 +1,7 @@
 .inner-content {
   height: 100vh;
-  border: 1px solid red;
 }
 #contact {
+  border: 1px solid red;
   /* scroll-margin-top: 100px; */
 }

@@ -26,7 +26,7 @@
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   /* padding: 0 10px; */
   height: 100vh;
 }
@@ -38,6 +38,9 @@
 }
 .nav .nav_menu {
   /* border: 1px solid red; */
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   padding: 0 40px;
   height: 100%;
@@ -80,7 +83,7 @@
 .btn-content {
   margin: 10px 0;
 }
-.btn-content button {
+.btn-content a {
   background: transparent;
   display: flex;
   align-items: center;
@@ -95,10 +98,10 @@
   cursor: pointer;
   position: absolute;
 }
-.btn-content button div{
+.btn-content a div{
  margin: 0 5px;
 }
-.btn-content button span {
+.btn-content a span {
   position: relative;
   border-radius: 50%;
   margin: 0 0 0 5px;
@@ -112,7 +115,7 @@
   left: 5px;
   transition: .5s ease-in-out;
 }
-.btn-content button span:hover{
+.btn-content a span:hover{
     background: #fff;
     color: #8f40e9;
 }

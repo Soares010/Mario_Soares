@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../assets/styles/NavBar.css";
 import {
   faBars,
@@ -55,6 +55,7 @@ const NavBar = () => {
       path: "contact",
     },
   ];
+
   return (
     <>
       <div className="social-medias">
@@ -118,13 +119,13 @@ const NavBar = () => {
                 natus officiis sunt! Architecto, nam.
               </p>
               <div className="btn-content">
-                <Button>
+                <LinkButton href="#about" title="Sobre mim">
                   <div>Mais sobre mim</div>{" "}
                   <span>
                     {" "}
                     <FontAwesomeIcon icon={faLongArrowRight} />
                   </span>
-                </Button>
+                </LinkButton>
               </div>
             </div>
           </div>
@@ -132,7 +133,7 @@ const NavBar = () => {
         <div className="nav_menu">
           <ul className="nav_list">
             {links.map(({ id, name, icon, path }) => (
-              <Li className="nav_item" key={id}>
+              <Li className="nav_item" id={id} key={id}>
                 <LinkButton href={`#${path}`} className="nav_link" title={name}>
                   <span>{icon}</span>
                 </LinkButton>
