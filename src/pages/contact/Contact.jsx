@@ -1,11 +1,13 @@
 import React from 'react';
-
+import Container from "../../components/Container";
 const Contact = () => {
-    return (
-        <div>
-            contact
-        </div>
-    );
-}
+  return (
+    <>
+      <Container>
+        <div id="contact">contact</div>
+      </Container>
+    </>
+  );
+};
 
 export default Contact;

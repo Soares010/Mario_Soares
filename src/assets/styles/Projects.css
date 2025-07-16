@@ -1,0 +1,7 @@
+.inner-content {
+  height: 100vh;
+  border: 1px solid red;
+}
+#projects {
+  /* scroll-margin-top: 100px; */
+}

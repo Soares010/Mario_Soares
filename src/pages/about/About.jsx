@@ -1,11 +1,14 @@
-import React from 'react';
-import Section from "../../components/Section";
+import React from "react";
+import Container from "../../components/Container";
+
 
 const About = () => {
   return (
-    <div>
-      <Section />
-    </div>
+    <>
+      <Container>
+        <div id="about">about</div>
+      </Container>
+    </>
   );
 };
 
