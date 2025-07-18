@@ -17,11 +17,21 @@
   margin: 0 auto;
   color: #8f40e9;
 }
+#about .container {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
 #about .main {
   /* border: 1px solid red; */
   width: 100%;
-  /* max-width: 600px; */
-  /* min-width: 500px; */
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+
 }
 #about .main .my-info {
   /* border: 1px solid red; */
