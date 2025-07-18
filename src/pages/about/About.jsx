@@ -4,7 +4,10 @@ import expressIcon from "../../assets/images/express.png";
 import csharpIcon from "../../assets/images/csharp.png";
 import mysqlIcon from "../../assets/images/mysql.png";
 import mongodb from "../../assets/images/mongodb.png";
-import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faLongArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3,
@@ -78,11 +81,6 @@ const About = () => {
                       E-mail: <label>Mariosoares20012005@gmail.com</label>
                     </span>
                   </div>
-                  <div>
-                    <span>
-                      {/* Telefone: <label>+244 927 025 790</label> */}
-                    </span>
-                  </div>
                 </div>
               </div>
               <div className="content-info">
@@ -148,7 +146,7 @@ const About = () => {
                       <label>JS</label>
                     </div>
                     <div>
-                      <h1>12+</h1>
+                      <h1>65%</h1>
                       <span>
                         <FontAwesomeIcon
                           icon={faReact}
@@ -173,7 +171,7 @@ const About = () => {
                       <label>Node JS</label>
                     </div>
                     <div>
-                      <h1>50%</h1>
+                      <h1>55%</h1>
                       <span>
                         <img
                           src={expressIcon}
@@ -244,6 +242,98 @@ const About = () => {
                         />
                       </span>
                       <label>Mongo DB</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="line-gray"></div>
+            <div className="experiences">
+              <div className="experience-content">
+                <h4 className="title-experience">Experiências & Educação</h4>
+                <div className="container">
+                  <div className="inner-content">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                    </div>
+                    <div className="line-gray-vertical"></div>
+                    <div className="title">
+                      <h4>
+                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                      </h4>
+                    </div>
+                    <div className="context">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti facere quaerat modi, quam exercitationem dicta
+                        tenetur error distinctio rem est excepturi eaque
+                        numquam, asperiores quos eos placeat laborum aliquam
+                        porro?
+                      </p>
+                    </div>
+                  </div>
+                  <div className="inner-content">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                    </div>
+                    <div className="line-gray-vertical"></div>
+                    <div className="title">
+                      <h4>
+                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                      </h4>
+                    </div>
+                    <div className="context">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti facere quaerat modi, quam exercitationem dicta
+                        tenetur error distinctio rem est excepturi eaque
+                        numquam, asperiores quos eos placeat laborum aliquam
+                        porro?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="container">
+                  <div className="inner-content">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                    </div>
+                    <div className="line-gray-vertical"></div>
+                    <div className="title">
+                      <h4>
+                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                      </h4>
+                    </div>
+                    <div className="context">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti facere quaerat modi, quam exercitationem dicta
+                        tenetur error distinctio rem est excepturi eaque
+                        numquam, asperiores quos eos placeat laborum aliquam
+                        porro?
+                      </p>
+                    </div>
+                  </div>
+                  <div className="inner-content">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                    </div>
+                    <div className="line-gray-vertical"></div>
+                    <div className="title">
+                      <h4>
+                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                      </h4>
+                    </div>
+                    <div className="context">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti facere quaerat modi, quam exercitationem dicta
+                        tenetur error distinctio rem est excepturi eaque
+                        numquam, asperiores quos eos placeat laborum aliquam
+                        porro?
+                      </p>
                     </div>
                   </div>
                 </div>

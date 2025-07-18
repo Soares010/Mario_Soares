@@ -113,7 +113,7 @@
 #about .main .line-gray {
   border: 0.5px solid #b8b8b8;
   width: 300px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 #about .main .my-skills h4 {
   margin: 0 auto;
@@ -128,9 +128,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 15px 0;
+  margin: 30px 0;
 }
-#about .main .my-skills .container .inner-content{
+#about .main .my-skills .container .inner-content {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
@@ -139,17 +139,17 @@
   width: 100%;
   margin: 0 10px;
 }
-#about .main .my-skills .container .inner-content h3{
+#about .main .my-skills .container .inner-content h3 {
   /* border: 1px solid red; */
   color: #eee;
   margin: 0 0 10px 0;
 }
-#about .main .my-skills .container .inner-content div h1{
+#about .main .my-skills .container .inner-content div h1 {
   /* border: 1px solid red; */
   color: #8f40e9;
   font-size: 14px;
 }
-#about .main .my-skills .container .inner-content .grid{
+#about .main .my-skills .container .inner-content .grid {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
@@ -157,7 +157,7 @@
   width: 100%;
   margin: 0 10px;
 }
-#about .main .my-skills .container .inner-content .grid div{
+#about .main .my-skills .container .inner-content .grid div {
   border: 1px solid #777;
   /* padding: 30px 60px; */
   width: 170px;
@@ -169,6 +169,92 @@
   justify-content: center;
   flex-direction: column;
 }
-#about .main .my-skills .container .inner-content .grid div label{
+#about .main .my-skills .container .inner-content .grid div label {
   color: #eee;
+}
+#about .main .experiences {
+  /* border: 1px solid red; */
+}
+#about .main .experiences .experience-content .title-experience {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  text-align: center;
+  color: #eee;
+  font-size: 13px;
+  font-weight: 300;
+}
+#about .main .experiences .experience-content .container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+#about .main .experiences .experience-content .container .inner-content {
+  /* border: 1px solid red; */
+  padding: 20px 34px;
+  margin: 0 5px 0 0;
+}
+#about
+  .main
+  .experiences
+  .experience-content
+  .container
+  .inner-content
+  .line-gray-vertical {
+  border: 1px solid #777;
+  position: absolute;
+  height: 100px;
+  margin: 0 6px;
+}
+#about .main .experiences .experience-content .container .inner-content .icon {
+  /* border: 1px solid red; */
+  color: #8f40e9;
+  font-size: 13px;
+}
+
+#about
+  .main
+  .experiences
+  .experience-content
+  .container
+  .inner-content
+  .icon
+  span {
+  /* border: 1px solid red; */
+  margin: 0 10px;
+  padding: 0 15px;
+  border-radius: 4px;
+  background: #eee;
+}
+#about .main .experiences .experience-content .container .inner-content .title {
+  /* border: 1px solid red; */
+  color: #eee;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0 20px;
+}
+#about
+  .main
+  .experiences
+  .experience-content
+  .container
+  .inner-content
+  .context {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 500px;
+  font-size: 13px;
+  padding: 0 20px;
+}
+#about
+  .main
+  .experiences
+  .experience-content
+  .container
+  .inner-content
+  .context
+  p {
+  /* border: 1px solid red; */
+  color: #eee;
+  text-align: justify;
 }
