@@ -2,19 +2,42 @@
   height: 100vh;
 }
 #projects {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* scroll-margin-top: 100px; */
 }
 
-#projects .title {
+#projects .title h2{
+  text-align: center;
+  margin: 10px auto;
+  color: #eee;
+  font-weight: 300;
+}
+#projects .title h2 span {
   text-align: center;
   margin: 0 auto;
+  color: #8f40e9;
 }
 #projects .container {
   /* border: 1px solid red; */
+}
+#projects .content {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+#projects .content .content-box{
+  /* border: 1px solid red; */
+  /* display: grid; */
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0;
+  margin: 5px;
+}
+#projects .content .content-box .card h3{
+  /* border: 1px solid red; */
+  color: #eee;
 }
 
 @keyframes appear {

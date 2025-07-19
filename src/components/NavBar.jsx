@@ -109,14 +109,22 @@ const NavBar = () => {
             </h4>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem accusamus veritatis voluptates iure eum
-                necessitatibus, dolores perspiciatis praesentium a iste repellat
-                consequatur obcaecati nostrum, expedita facilis ex atque quam
-                distinctio? Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolorum suscipit ex eius perspiciatis, corrupti, fugit
-                expedita eos sint id ipsa incidunt? Error facilis iste maxime
-                natus officiis sunt! Architecto, nam.
+                Apaixonado por tecnologia, desenvolvimento de
+                sistemas e inovação. Ao longo da minha jornada, venho me
+                dedicando à criação de soluções práticas, modernas e funcionais
+                para empresas e pessoas que desejam transformar ideias em
+                realidade digital. Com uma forte base em desenvolvimento web e
+                sistemas de gestão, domino ferramentas como React, Node.js, PHP,
+                MySQL e outras tecnologias essenciais para criar interfaces
+                intuitivas e sistemas robustos. Cada projeto que desenvolvo
+                carrega minha marca: atenção aos detalhes, foco em performance e
+                usabilidade. Acredito que um bom sistema não é apenas bonito,
+                mas também eficiente, seguro e fácil de usar. Por isso, estou
+                sempre em constante evolução, estudando e aplicando as melhores
+                práticas do mercado. Se você busca alguém comprometido, criativo
+                e que realmente se importa com o resultado final, conheça meus
+                projetos e sinta-se à vontade para entrar em contato. Estou
+                pronto para novos desafios
               </p>
               <div className="btn-content">
                 <LinkButton href="#about" title="Sobre mim">

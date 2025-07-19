@@ -90,7 +90,7 @@ const About = () => {
                     <span>---- Anos de Experiência</span>
                   </div>
                   <div>
-                    <h1>05+</h1>
+                    <h1>06+</h1>
                     <span>---- Projectos Finalizados</span>
                   </div>
                 </div>
@@ -255,27 +255,32 @@ const About = () => {
                 <div className="container">
                   <div className="inner-content">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2025</span>
                     </div>
                     <div className="line-gray-vertical"></div>
                     <div className="title">
                       <h4>
-                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                        Licenciatura Eng. Informática -{" "}
+                        <span> 2º ano Pela Universidade de Belas</span>
                       </h4>
                     </div>
                     <div className="context">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti facere quaerat modi, quam exercitationem dicta
-                        tenetur error distinctio rem est excepturi eaque
-                        numquam, asperiores quos eos placeat laborum aliquam
-                        porro?
+                        Atualmente cursando o segundo ano da licenciatura em
+                        Engenharia Informática, onde desenvolvo uma base sólida
+                        em algoritmos, estruturas de dados, programação
+                        orientada a objetos, redes de computadores, sistemas
+                        operacionais e bancos de dados. Ao longo do curso, tenho
+                        trabalhado em projetos acadêmicos que simulam situações
+                        reais de desenvolvimento de software, reforçando minha
+                        capacidade de trabalhar em equipe, resolver problemas e
+                        aplicar boas práticas
                       </p>
                     </div>
                   </div>
                   <div className="inner-content">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2021</span>
                     </div>
                     <div className="line-gray-vertical"></div>
                     <div className="title">
@@ -285,11 +290,16 @@ const About = () => {
                     </div>
                     <div className="context">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti facere quaerat modi, quam exercitationem dicta
-                        tenetur error distinctio rem est excepturi eaque
-                        numquam, asperiores quos eos placeat laborum aliquam
-                        porro?
+                        Concluí um curso completo focado nas tecnologias
+                        fundamentais da web: HTML5, CSS3 e JavaScript. Durante a
+                        formação, aprendi a criar websites responsivos,
+                        estilizados e interativos, utilizando práticas modernas
+                        de layout (Flexbox, Grid), design responsivo,
+                        manipulação do DOM e lógica de programação para
+                        interfaces. Também desenvolvi projetos práticos como
+                        páginas de login, formulários, dashboards e jogos
+                        simples, reforçando meu domínio dessas ferramentas no
+                        frontend.
                       </p>
                     </div>
                   </div>
@@ -298,41 +308,49 @@ const About = () => {
                 <div className="container">
                   <div className="inner-content">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2025</span>
                     </div>
                     <div className="line-gray-vertical"></div>
                     <div className="title">
                       <h4>
-                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                        Git & Github - <span>Versionamento de Projectos</span>
                       </h4>
                     </div>
                     <div className="context">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti facere quaerat modi, quam exercitationem dicta
-                        tenetur error distinctio rem est excepturi eaque
-                        numquam, asperiores quos eos placeat laborum aliquam
-                        porro?
+                        Adquiri conhecimentos sólidos sobre o uso do Git para
+                        controle de versão e GitHub para hospedagem e
+                        colaboração em projetos. Aprendi a criar e gerenciar
+                        repositórios, trabalhar com commits, branches, merges,
+                        pull requests e resolver conflitos. Hoje aplico Git em
+                        todos os meus projetos, garantindo rastreabilidade,
+                        organização e trabalho colaborativo eficaz em equipe,
+                        seguindo as boas práticas do desenvolvimento moderno.
                       </p>
                     </div>
                   </div>
                   <div className="inner-content">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faBriefcase} /> <span>2018</span>
+                      <FontAwesomeIcon icon={faBriefcase} /> <span>2025</span>
                     </div>
                     <div className="line-gray-vertical"></div>
                     <div className="title">
                       <h4>
-                        Desenvolvimento Web - <span>HTML, CSS3, JS</span>
+                        Node Js + Http Servers + Express -{" "}
+                        <span>Desenvolvimento de Projectos</span>
                       </h4>
                     </div>
                     <div className="context">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti facere quaerat modi, quam exercitationem dicta
-                        tenetur error distinctio rem est excepturi eaque
-                        numquam, asperiores quos eos placeat laborum aliquam
-                        porro?
+                        Participei de um curso intensivo de 3 horas onde aprendi
+                        os fundamentos do Node.js, incluindo a criação de
+                        servidores HTTP, manipulação de rotas, uso de Express.js
+                        e integração com bancos de dados. Também desenvolvi uma
+                        pequena API REST como exercício prático, reforçando meu
+                        entendimento sobre a estrutura de projetos backend,
+                        middlewares, rotas e controle de respostas. Foi um curso
+                        objetivo que me proporcionou base para desenvolver
+                        aplicações completas no lado do servidor.
                       </p>
                     </div>
                   </div>
