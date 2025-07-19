@@ -33,11 +33,18 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0;
-  margin: 5px;
+  margin: 10px 5px;
 }
 #projects .content .content-box .card h3{
   /* border: 1px solid red; */
   color: #eee;
+}
+#projects .content .content-box .card p{
+  /* border: 1px solid red; */
+ width: 400px;
+ color: #eee;
+ text-align: justify;
+ padding: 5px 0;
 }
 
 @keyframes appear {

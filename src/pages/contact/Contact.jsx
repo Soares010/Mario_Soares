@@ -21,10 +21,13 @@ const Contact = () => {
               <div className="inner-text">
                 <h4>Não seja tímido!</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Possimus saepe repellat harum animi et excepturi ad blanditiis
-                  id libero impedit, dignissimos dolor eaque sequi eius.
-                  Perspiciatis repellendus nostrum ab sit?
+                  Tem uma ideia em mente, um projeto para tirar do papel ou quer
+                  simplesmente trocar uma ideia sobre tecnologia? Estou sempre
+                  aberto a novas conexões, parcerias e oportunidades
+                  desafiadoras. Se você se identificou com meu trabalho ou
+                  acredita que posso ajudar de alguma forma, não hesite em me
+                  chamar. Seja um e-mail, uma ligação ou até mesmo um "olá",
+                  será um prazer conversar com você!
                 </p>
               </div>
               <div className="inner-contact">
