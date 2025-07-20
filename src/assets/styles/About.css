@@ -310,6 +310,13 @@
     font-size: 22px;
     padding: 0 10px;
   }
+  #about .main .my-info .content-info {
+  /* border: 1px solid red; */
+  display: grid;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
 
   #about .title h2 span {
     font-size: 24px;
