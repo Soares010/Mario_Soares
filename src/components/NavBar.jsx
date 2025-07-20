@@ -25,8 +25,9 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 300); // atraso leve
-    return () => clearTimeout(timer);
+    setShow(true);
+    // const timer = setTimeout(() => setShow(true), 300); // atraso leve
+    // return () => clearTimeout(timer);
   }, []);
 
   const [text] = useTypewriter({
