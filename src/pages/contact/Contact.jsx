@@ -1,23 +1,57 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../components/Container";
 import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCheck,
   faLongArrowRight,
   faMailBulk,
   faPhone,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import Form from "../../components/Form";
+import Input from "../../components/Input";
+import Message from "../../components/Message";
+import Button from "../../components/Button";
+
 const Contact = () => {
   const [data, setData] = useState([]);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    const notify = () => {
+      if (success !== "") {
+        toast.success(success, {
+          duration: 2000,
+          position: "bottom-right",
+          icon: <FontAwesomeIcon icon={faCheck} style={{ color: "#00FF00" }} />,
+          removeDelay: 1000,
+        });
+        const timeout = setTimeout(() => setSuccess(""), 2000);
+        return () => clearTimeout(timeout);
+      }
+
+      if (error !== "") {
+        toast.error(error, {
+          duration: 2000,
+          position: "bottom-right",
+          icon: <FontAwesomeIcon icon={faXmark} style={{ color: "#FF0000" }} />,
+          removeDelay: 1000,
+        });
+        const timeout = setTimeout(() => setError(""), 2000);
+        return () => clearTimeout(timeout);
+      }
+    };
+    notify();
+  }, [success, error]);
 
   function handleChangeInput(e) {
     setData((data) => ({
       ...data,
       [e.target.name]: e.target.value,
     }));
-    console.log(data);
   }
 
   function handleSubmitData(e) {
@@ -29,9 +63,16 @@ const Contact = () => {
     emailjs
       .send(serviceId, templateId, data, apiPublicKey)
       .then((response) => {
-        console.log("enviado!" + response.status, response.text);
+        setData((data) => ({
+          ...data,
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        }));
+        setSuccess("E-mail enviado com sucesso!");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError("Ocorreu um erro ao enviar e-mail!"));
   }
   return (
     <>
@@ -72,52 +113,53 @@ const Contact = () => {
               </div>
             </div>
             <div className="content">
-              <form onSubmit={handleSubmitData}>
+              <Form submit={handleSubmitData}>
                 <div className="input-box">
                   <div className="input-field">
                     <span>*Seu Nome</span>
-                    <input
+                    <Input
                       type="text"
                       name="name"
-                      id=""
-                      onChange={(e) => handleChangeInput(e)}
+                      handleChange={handleChangeInput}
+                      required="required"
                     />
                   </div>
                   <div className="input-field">
                     <span>*Seu E-mail</span>
-                    <input
+                    <Input
                       type="email"
                       name="email"
-                      id=""
-                      onChange={(e) => handleChangeInput(e)}
+                      required="required"
+                      handleChange={handleChangeInput}
                     />
                   </div>
                   <div className="input-field">
                     <span>*Assunto</span>
-                    <input
+                    <Input
                       type="text"
                       name="subject"
-                      id=""
-                      onChange={(e) => handleChangeInput(e)}
+                      required="required"
+                      handleChange={handleChangeInput}
                     />
                   </div>
                   <div className="input-field">
-                    <textarea
+                    <Message
                       name="message"
-                      id=""
-                      onChange={(e) => handleChangeInput(e)}
-                    ></textarea>
+                      handleChange={handleChangeInput}
+                      required="required"
+                    />
                     <div className="button-send">
-                      <button>
+                      <Button>
                         Enviar a mensagem
                         <span>
                           <FontAwesomeIcon icon={faLongArrowRight} />
                         </span>
-                      </button>
+                      </Button>
+                      <Toaster />
                     </div>
                   </div>
                 </div>
-              </form>
+              </Form>
             </div>
           </div>
         </div>
