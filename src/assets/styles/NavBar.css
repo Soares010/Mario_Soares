@@ -264,7 +264,8 @@
   }
 
   .name-title h4 {
-    font-size: 17px;
+    /* border: 1px solid red; */
+    font-size: 14px;
   }
 
   .text-content div p {
