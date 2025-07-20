@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "../assets/styles/NavBar.css";
 import {
-  faBars,
-  faProjectDiagram,
   faUser,
   faHomeAlt,
   faFolder,
@@ -112,9 +110,7 @@ const NavBar = () => {
             {show && (
               <h4>
                 Eu sou <span> {text}</span>
-                <span style={{ color: "#8f40e9" }}>
-                  <Cursor />
-                </span>
+                <span style={{ color: "#8f40e9" }}>{/* <Cursor /> */}</span>
               </h4>
             )}
             <div>
