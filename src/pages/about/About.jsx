@@ -17,6 +17,7 @@ import {
   faPhp,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import LinkButton from "../../components/LinkButton";
 
 const About = () => {
   return (
@@ -56,13 +57,17 @@ const About = () => {
                     </span>
                   </div>
                   <div className="btn-download">
-                    <a href="#">
+                    <LinkButton
+                      title="Baixar CV"
+                      href="../../public/Mário Fernando Gomes Neto.pdf"
+                      download={"Mário Fernando Gomes Neto.pdf"}
+                    >
                       Download CV
                       <span>
                         {" "}
                         <FontAwesomeIcon icon={faLongArrowRight} />
                       </span>
-                    </a>
+                    </LinkButton>
                   </div>
                 </div>
                 <div className="content">
