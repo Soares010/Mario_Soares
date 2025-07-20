@@ -46,6 +46,10 @@
  text-align: justify;
  padding: 5px 0;
 }
+#projects .content .content-box .card .card-image {
+  /* border: 1px solid red; */
+ width: 400px;
+}
 
 @keyframes appear {
   from {
@@ -200,10 +204,10 @@
     padding: 5px 10px;
   }
 
-  #projects .content .content-box img {
+  #projects .content .content-box .card-image img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 10px;
   }
 

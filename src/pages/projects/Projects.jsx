@@ -124,7 +124,6 @@ const Projects = () => {
                         src={img}
                         alt={name}
                         className="card-image"
-                        style={{ width: "400px" }}
                       />
                     )}
                     <h3>{name}</h3>
