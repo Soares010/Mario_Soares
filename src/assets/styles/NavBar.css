@@ -1,26 +1,26 @@
-.social-medias{
-    /* border: 1px solid red; */
-    z-index: 1;
-    display: flex;
-    margin: 5px 0;
-    justify-content: space-between;
+.social-medias {
+  /* border: 1px solid red; */
+  z-index: 1;
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
 }
-.social-medias .social{
-    /* border: 1px solid red; */
-    padding: 0 50px;
-    display: flex;
+.social-medias .social {
+  /* border: 1px solid red; */
+  padding: 0 50px;
+  display: flex;
 }
-.social-medias .social div{
-    margin: 0 10px;
-    font-size: 16px;
-    /* padding: 10px; */
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ddd;
-    border-radius: 50%;
+.social-medias .social div {
+  margin: 0 10px;
+  font-size: 16px;
+  /* padding: 10px; */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  border-radius: 50%;
 }
 .nav {
   /* border: 1px solid red; */
@@ -99,8 +99,8 @@
   cursor: pointer;
   position: absolute;
 }
-.btn-content a div{
- margin: 0 5px;
+.btn-content a div {
+  margin: 0 5px;
 }
 .btn-content a span {
   position: relative;
@@ -114,13 +114,12 @@
   align-items: center;
   float: right;
   left: 5px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.btn-content a span:hover{
-    background: #fff;
-    color: #8f40e9;
+.btn-content a span:hover {
+  background: #fff;
+  color: #8f40e9;
 }
-
 
 /* Telas até 1024px (tablets) */
 @media (max-width: 1024px) {
@@ -144,6 +143,13 @@
 
   .btn-content a {
     position: relative;
+  }
+  .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
   }
 }
 
@@ -215,6 +221,13 @@
     height: 25px;
     margin-left: 5px;
   }
+  .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
+  }
 }
 /* Telas até 1024px (tablets) */
 @media (max-width: 1024px) {
@@ -233,6 +246,13 @@
 
   .btn-content a {
     font-size: 11px;
+  }
+  .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
   }
 }
 
@@ -254,6 +274,13 @@
   .btn-content a {
     font-size: 10px;
   }
+  .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
+  }
 }
 
 /* Telas até 812px (ex: iPhone X, XS, 11 Pro) */
@@ -265,6 +292,9 @@
 
   .name-title h4 {
     /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
     font-size: 14px;
   }
 
@@ -283,9 +313,12 @@
     width: 120px;
     height: 170px;
   }
-
   .name-title h4 {
-    font-size: 17px;
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
   }
 
   .text-content div p {
@@ -305,7 +338,11 @@
   }
 
   .name-title h4 {
-    font-size: 16px;
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
   }
 
   .text-content div p {
@@ -325,7 +362,11 @@
   }
 
   .name-title h4 {
-    font-size: 15px;
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 14px;
   }
 
   .text-content div p {
@@ -345,6 +386,10 @@
   }
 
   .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
     font-size: 14px;
   }
 
@@ -363,9 +408,12 @@
     width: 80px;
     height: 120px;
   }
-
   .name-title h4 {
-    font-size: 13px;
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
+    font-size: 12px;
   }
 
   .text-content div p {
@@ -385,6 +433,10 @@
   }
 
   .name-title h4 {
+    /* border: 1px solid red; */
+    overflow-x: auto;
+    width: 100%;
+    word-break: break-word;
     font-size: 12px;
   }
 
