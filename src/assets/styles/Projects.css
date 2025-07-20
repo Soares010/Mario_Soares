@@ -193,19 +193,32 @@
     font-size: 21px;
   }
 
-  #projects .content .content-box .card h3 {
-    font-size: 16px;
+   #projects .content .content-box .card p {
+    font-size: 13px;
+    width: 100%; 
+    text-align: justify;
+    padding: 5px 10px;
   }
 
-  #projects .content .content-box .card p {
-    font-size: 14px;
+  #projects .content .content-box img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  #projects .content {
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  #projects .content .content-box {
+    width: 90%;
+    margin: 10px auto;
   }
 }
 
-/* ✅ iPhone X / 11 Pro (375px) — já coberto, mas reforçando */
-@media (max-width: 375px) {
-  /* já aplicado no bloco anterior, mas você pode ajustar mais aqui se quiser */
-}
 
 /* ✅ iPhone XR / 11 / 11 Pro Max (414px) */
 @media (max-width: 414px) {

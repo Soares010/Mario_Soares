@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import "../assets/styles/NavBar.css";
 import {
   faBars,
@@ -18,11 +18,16 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import Button from "./Button";
 import Li from "./Li";
 import LinkButton from "./LinkButton";
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   const [text] = useTypewriter({
     words: ["Mário Soares", "Desenvolvedor Web", "Programador Fullstack"],
     loop: {},
@@ -101,12 +106,14 @@ const NavBar = () => {
         </div>
         <div className="text-content">
           <div className="name-title">
-            <h4>
-              Eu sou <span>{text}</span>
-              <span style={{ color: "#8f40e9" }}>
-                <Cursor />
-              </span>
-            </h4>
+            {show && (
+              <h4>
+                Eu sou <span>{text}</span>
+                <span style={{ color: "#8f40e9" }}>
+                  <Cursor />
+                </span>
+              </h4>
+            )}
             <div>
               <p>
                 Apaixonado por tecnologia, desenvolvimento de sistemas e
