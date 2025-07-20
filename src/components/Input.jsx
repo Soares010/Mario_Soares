@@ -7,7 +7,7 @@ const Input = ({ type, name, handleChange, required }) => {
         type={type}
         name={name}
         onChange={(e) => handleChange(e)}
-        required={required}
+        // required={required}
       />
     </>
   );

@@ -6,7 +6,7 @@ const Message = ({ name, handleChange, required }) => {
       <textarea
         name={name}
         onChange={handleChange}
-        required={required}
+        // required={required}
       ></textarea>
     </>
   );
