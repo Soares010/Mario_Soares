@@ -216,12 +216,31 @@
     margin-left: 5px;
   }
 }
-
-/* Telas até 480px (celulares pequenos) */
-@media (max-width: 480px) {
+/* Telas até 1024px (tablets) */
+@media (max-width: 1024px) {
   .nav .image-content img {
-    width: 150px;
-    height: 200px;
+    width: 160px;
+    height: 210px;
+  }
+
+  .name-title h4 {
+    font-size: 20px;
+  }
+
+  .text-content div p {
+    font-size: 15px;
+  }
+
+  .btn-content a {
+    font-size: 11px;
+  }
+}
+
+/* Telas até 844px (ex: iPhone 12 Pro, XR) */
+@media (max-width: 844px) {
+  .nav .image-content img {
+    width: 140px;
+    height: 190px;
   }
 
   .name-title h4 {
@@ -233,6 +252,146 @@
   }
 
   .btn-content a {
+    font-size: 10px;
+  }
+}
+
+/* Telas até 812px (ex: iPhone X, XS, 11 Pro) */
+@media (max-width: 812px) {
+  .nav .image-content img {
+    width: 130px;
+    height: 180px;
+  }
+
+  .name-title h4 {
+    font-size: 17px;
+  }
+
+  .text-content div p {
+    font-size: 13px;
+  }
+
+  .btn-content a {
+    font-size: 9.5px;
+  }
+}
+
+/* Telas até 768px (celulares grandes e tablets pequenos) */
+@media (max-width: 768px) {
+  .nav .image-content img {
+    width: 120px;
+    height: 170px;
+  }
+
+  .name-title h4 {
+    font-size: 17px;
+  }
+
+  .text-content div p {
+    font-size: 13px;
+  }
+
+  .btn-content a {
     font-size: 9px;
+  }
+}
+
+/* Telas até 740px (ex: Galaxy S8/S9/S10) */
+@media (max-width: 740px) {
+  .nav .image-content img {
+    width: 110px;
+    height: 160px;
+  }
+
+  .name-title h4 {
+    font-size: 16px;
+  }
+
+  .text-content div p {
+    font-size: 12px;
+  }
+
+  .btn-content a {
+    font-size: 8.5px;
+  }
+}
+
+/* Telas até 667px (iPhone 6/7/8 Plus, Galaxy A10) */
+@media (max-width: 667px) {
+  .nav .image-content img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .name-title h4 {
+    font-size: 15px;
+  }
+
+  .text-content div p {
+    font-size: 12px;
+  }
+
+  .btn-content a {
+    font-size: 8px;
+  }
+}
+
+/* Telas até 568px (iPhone SE, iPhone 5, Galaxy Fold) */
+@media (max-width: 568px) {
+  .nav .image-content img {
+    width: 90px;
+    height: 140px;
+  }
+
+  .name-title h4 {
+    font-size: 14px;
+  }
+
+  .text-content div p {
+    font-size: 11px;
+  }
+
+  .btn-content a {
+    font-size: 7.5px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .nav .image-content img {
+    width: 80px;
+    height: 120px;
+  }
+
+  .name-title h4 {
+    font-size: 13px;
+  }
+
+  .text-content div p {
+    font-size: 10px;
+  }
+
+  .btn-content a {
+    font-size: 7px;
+  }
+}
+
+/* Telas até 360px (ex: Galaxy A51, S10e) */
+@media (max-width: 360px) {
+  .nav .image-content img {
+    width: 70px;
+    height: 110px;
+  }
+
+  .name-title h4 {
+    font-size: 12px;
+  }
+
+  .text-content div p {
+    font-size: 9px;
+  }
+
+  .btn-content a {
+    font-size: 6.5px;
   }
 }

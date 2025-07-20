@@ -164,3 +164,84 @@
     text-align: justify;
   }
 }
+/* ✅ iPhone SE (320px) */
+@media (max-width: 320px) {
+  #projects .title h2 {
+    font-size: 18px;
+  }
+
+  #projects .title h2 span {
+    font-size: 20px;
+  }
+
+  #projects .content .content-box .card h3 {
+    font-size: 15px;
+  }
+
+  #projects .content .content-box .card p {
+    font-size: 13px;
+  }
+}
+
+/* ✅ Galaxy S8 (360px) */
+@media (max-width: 360px) {
+  #projects .title h2 {
+    font-size: 19px;
+  }
+
+  #projects .title h2 span {
+    font-size: 21px;
+  }
+
+  #projects .content .content-box .card h3 {
+    font-size: 16px;
+  }
+
+  #projects .content .content-box .card p {
+    font-size: 14px;
+  }
+}
+
+/* ✅ iPhone X / 11 Pro (375px) — já coberto, mas reforçando */
+@media (max-width: 375px) {
+  /* já aplicado no bloco anterior, mas você pode ajustar mais aqui se quiser */
+}
+
+/* ✅ iPhone XR / 11 / 11 Pro Max (414px) */
+@media (max-width: 414px) {
+  .inner-content {
+    height: auto;
+    padding: 25px;
+  }
+
+  #projects .title h2 {
+    font-size: 22px;
+  }
+
+  #projects .title h2 span {
+    font-size: 24px;
+  }
+
+  #projects .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #projects .content .content-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #projects .content .content-box .card {
+    padding: 12px;
+  }
+
+  #projects .content .content-box .card h3 {
+    font-size: 18px;
+  }
+
+  #projects .content .content-box .card p {
+    font-size: 15px;
+  }
+}

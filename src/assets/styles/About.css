@@ -268,7 +268,7 @@
   text-align: justify;
 }
 
-/* Telas até 1024px (tablets) */
+/* Até 1024px (tablets grandes) */
 @media (max-width: 1024px) {
   .inner-content {
     height: auto;
@@ -286,18 +286,25 @@
     padding: 20px;
   }
 
-  #about .main .my-skills .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  #about .main .my-skills .container,
   #about .main .experiences .experience-content .container {
     flex-direction: column;
     align-items: center;
   }
 }
 
-/* Telas até 768px (celulares grandes) */
+/* Até 820px (iPad mini / Galaxy Tab S) */
+@media (max-width: 820px) {
+  #about .main .my-info {
+    padding: 0 15px;
+  }
+
+  #about .main .my-skills .container .inner-content {
+    padding: 0 15px;
+  }
+}
+
+/* Até 768px (tablets pequenos / celulares grandes) */
 @media (max-width: 768px) {
   #about .title h2 {
     font-size: 22px;
@@ -322,59 +329,42 @@
     padding: 0 10px;
   }
 
-  #about .main .my-skills .container .inner-content .grid  {
-   display: grid;
-   flex-direction: column;
+  #about .main .my-skills .container .inner-content .grid {
+    display: grid;
+    flex-direction: column;
   }
+
   #about .main .my-skills .container .inner-content .grid div {
     width: 140px;
-    height: auto;
     padding: 20px;
   }
 
-  /* #about .main .experiences .experience-content .container .inner-content {
-    padding: 15px;
-    border: 1px solid red;
-  } */
   #about .main .experiences .experience-content .container .inner-content {
     padding: 5px;
-    /* border: 1px solid red; */
-  }
-  #about .main .experiences .experience-content .container .inner-content h4 {
-    /* border: 1px solid red; */
-    margin: 0 -12px;
   }
 
-  #about
-    .main
-    .experiences
-    .experience-content
-    .container
-    .inner-content
-    .line-gray-vertical {
+  #about .main .experiences .experience-content .container .inner-content h4 {
+    margin: 0 -12px;
+    /* border: 1px solid red; */
+  }
+
+  #about .main .experiences .experience-content .container .inner-content .line-gray-vertical {
     display: none;
   }
 
-  #about
-    .main
-    .experiences
-    .experience-content
-    .container
-    .inner-content
-    .context {
+  #about .main .experiences .experience-content .container .inner-content .context {
     padding: 0 10px;
   }
 }
 
-/* Telas até 480px (celulares pequenos) */
-@media (max-width: 480px) {
+/* Até 667px (iPhone SE, Galaxy S5/S6/S7/S8) */
+@media (max-width: 667px) {
   #about .title h2 {
-    font-size: 18px;
-    
+    font-size: 20px;
   }
 
   #about .title h2 span {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   #about .main .my-info .content-info .inner-text h4 {
@@ -382,7 +372,7 @@
   }
 
   #about .main .my-info .content-info div span {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #about .main .my-skills h4,
@@ -398,34 +388,71 @@
     font-size: 12px;
   }
 
-  #about
-    .main
-    .experiences
-    .experience-content
-    .container
-    .inner-content
-    .icon {
+  #about .main .experiences .experience-content .container .inner-content .icon {
     font-size: 12px;
   }
 
-  #about
-    .main
-    .experiences
-    .experience-content
-    .container
-    .inner-content
-    .title {
+  #about .main .experiences .experience-content .container .inner-content .title {
     font-size: 13px;
   }
 
-  #about
-    .main
-    .experiences
-    .experience-content
-    .container
-    .inner-content
-    .context
-    p {
+  #about .main .experiences .experience-content .container .inner-content .context p {
     font-size: 12px;
+  }
+}
+
+/* Até 414px (iPhone XR, iPhone 11, 12, 13) */
+@media (max-width: 414px) {
+  .inner-content {
+    padding: 10px;
+  }
+
+  #about .title h2 {
+    font-size: 18px;
+  }
+
+  #about .title h2 span {
+    font-size: 20px;
+  }
+
+  #about .main .my-info .content-info {
+    padding: 8px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div {
+    width: 120px;
+    padding: 10px;
+  }
+}
+
+/* Até 375px (iPhone X, iPhone 8) */
+@media (max-width: 375px) {
+  #about .title h2 {
+    font-size: 16px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div {
+    width: 100px;
+    padding: 8px;
+  }
+
+  #about .main .experiences .experience-content .container .inner-content .context p {
+    font-size: 11px;
+  }
+}
+
+/* Até 320px (iPhone 5/SE antigo) */
+@media (max-width: 320px) {
+  #about .title h2 {
+    font-size: 15px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div h1,
+  #about .main .experiences .experience-content .container .inner-content .title {
+    font-size: 12px;
+  }
+
+  #about .main .experiences .experience-content .container .inner-content .context p {
+    font-size: 10px;
   }
 }
