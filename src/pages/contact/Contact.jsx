@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../../components/Container";
+import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLongArrowRight,
@@ -7,6 +8,31 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
+  const [data, setData] = useState([]);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  function handleChangeInput(e) {
+    setData((data) => ({
+      ...data,
+      [e.target.name]: e.target.value,
+    }));
+    console.log(data);
+  }
+
+  function handleSubmitData(e) {
+    e.preventDefault();
+    const serviceId = "soaresservice10";
+    const templateId = "soares_10";
+    const apiPublicKey = "3qxeZrbzyEgTygebO";
+
+    emailjs
+      .send(serviceId, templateId, data, apiPublicKey)
+      .then((response) => {
+        console.log("enviado!" + response.status, response.text);
+      })
+      .catch((error) => console.log(error));
+  }
   return (
     <>
       <Container>
@@ -46,22 +72,41 @@ const Contact = () => {
               </div>
             </div>
             <div className="content">
-              <form>
+              <form onSubmit={handleSubmitData}>
                 <div className="input-box">
                   <div className="input-field">
                     <span>*Seu Nome</span>
-                    <input type="text" name="" id="" />
+                    <input
+                      type="text"
+                      name="name"
+                      id=""
+                      onChange={(e) => handleChangeInput(e)}
+                    />
                   </div>
                   <div className="input-field">
                     <span>*Seu E-mail</span>
-                    <input type="email" name="" id="" />
+                    <input
+                      type="email"
+                      name="email"
+                      id=""
+                      onChange={(e) => handleChangeInput(e)}
+                    />
                   </div>
                   <div className="input-field">
                     <span>*Assunto</span>
-                    <input type="text" name="" id="" />
+                    <input
+                      type="text"
+                      name="subject"
+                      id=""
+                      onChange={(e) => handleChangeInput(e)}
+                    />
                   </div>
                   <div className="input-field">
-                    <textarea name="message" id=""></textarea>
+                    <textarea
+                      name="message"
+                      id=""
+                      onChange={(e) => handleChangeInput(e)}
+                    ></textarea>
                     <div className="button-send">
                       <button>
                         Enviar a mensagem

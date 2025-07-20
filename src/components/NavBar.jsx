@@ -78,7 +78,7 @@ const NavBar = () => {
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="https://github.com/">
               <FontAwesomeIcon
                 icon={faGithub}
                 style={{ color: "rgb(24, 23, 23)" }}
@@ -109,20 +109,20 @@ const NavBar = () => {
             </h4>
             <div>
               <p>
-                Apaixonado por tecnologia, desenvolvimento de
-                sistemas e inovação. Ao longo da minha jornada, venho me
-                dedicando à criação de soluções práticas, modernas e funcionais
-                para empresas e pessoas que desejam transformar ideias em
-                realidade digital. Com uma forte base em desenvolvimento web e
-                sistemas de gestão, domino ferramentas como React, Node.js, PHP,
-                MySQL e outras tecnologias essenciais para criar interfaces
-                intuitivas e sistemas robustos. Cada projeto que desenvolvo
-                carrega minha marca: atenção aos detalhes, foco em performance e
-                usabilidade. Acredito que um bom sistema não é apenas bonito,
-                mas também eficiente, seguro e fácil de usar. Por isso, estou
-                sempre em constante evolução, estudando e aplicando as melhores
-                práticas do mercado. Se você busca alguém comprometido, criativo
-                e que realmente se importa com o resultado final, conheça meus
+                Apaixonado por tecnologia, desenvolvimento de sistemas e
+                inovação. Ao longo da minha jornada, venho me dedicando à
+                criação de soluções práticas, modernas e funcionais para
+                empresas e pessoas que desejam transformar ideias em realidade
+                digital. Com uma forte base em desenvolvimento web e sistemas de
+                gestão, domino ferramentas como React, Node.js, PHP, MySQL e
+                outras tecnologias essenciais para criar interfaces intuitivas e
+                sistemas robustos. Cada projeto que desenvolvo carrega minha
+                marca: atenção aos detalhes, foco em performance e usabilidade.
+                Acredito que um bom sistema não é apenas bonito, mas também
+                eficiente, seguro e fácil de usar. Por isso, estou sempre em
+                constante evolução, estudando e aplicando as melhores práticas
+                do mercado. Se você busca alguém comprometido, criativo e que
+                realmente se importa com o resultado final, conheça meus
                 projetos e sinta-se à vontade para entrar em contato. Estou
                 pronto para novos desafios
               </p>
