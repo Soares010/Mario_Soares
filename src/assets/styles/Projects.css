@@ -191,6 +191,7 @@
 @media (max-width: 360px) {
   #projects .title h2 {
     font-size: 19px;
+    /* border: 1px solid red; */
   }
 
   #projects .title h2 span {
@@ -204,9 +205,14 @@
     padding: 5px 10px;
   }
 
+  #projects .content .content-box .card-image  {
+    /* border: 1px solid red; */
+    width: 300px;
+  }
   #projects .content .content-box .card-image img {
     width: 100%;
     height: auto;
+    /* border: 1px solid red; */
     max-width: 250px;
     border-radius: 10px;
   }

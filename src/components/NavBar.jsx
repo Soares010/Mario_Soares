@@ -35,6 +35,7 @@ const NavBar = () => {
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80,
+    delaySpeed: 1500,
   });
   const links = [
     {
