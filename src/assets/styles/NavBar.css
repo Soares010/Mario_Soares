@@ -120,3 +120,119 @@
     background: #fff;
     color: #8f40e9;
 }
+
+
+/* Telas até 1024px (tablets) */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .text-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .nav .image-content img {
+    width: 250px;
+    height: 350px;
+    margin: 20px 0;
+  }
+
+  .btn-content a {
+    position: relative;
+  }
+}
+
+/* Telas até 768px (celulares grandes) */
+@media (max-width: 768px) {
+  .social-medias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-medias .social {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-medias .social div {
+    margin: 5px;
+  }
+
+  .nav {
+    flex-direction: column;
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .nav .nav_menu {
+    position: static;
+    flex-direction: column;
+    height: auto;
+    background: transparent;
+    padding: 10px;
+    display: none;
+  }
+
+  .nav .nav_menu .nav_list a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .text-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .nav .image-content img {
+    width: 200px;
+    height: 280px;
+  }
+
+  .name-title h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .btn-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .btn-content a {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  .btn-content a span {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .nav .image-content img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .name-title h4 {
+    font-size: 18px;
+  }
+
+  .text-content div p {
+    font-size: 14px;
+  }
+
+  .btn-content a {
+    font-size: 9px;
+  }
+}

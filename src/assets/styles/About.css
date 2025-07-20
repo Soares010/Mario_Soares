@@ -31,7 +31,6 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0;
-
 }
 #about .main .my-info {
   /* border: 1px solid red; */
@@ -267,4 +266,162 @@
   /* border: 1px solid red; */
   color: #eee;
   text-align: justify;
+}
+
+/* Telas até 1024px (tablets) */
+@media (max-width: 1024px) {
+  .inner-content {
+    height: auto;
+    padding: 20px;
+  }
+
+  #about .main .my-info {
+    flex-direction: column;
+    padding: 0 20px;
+    min-width: 100%;
+  }
+
+  #about .main .my-info .content-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #about .main .my-skills .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .main .experiences .experience-content .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Telas até 768px (celulares grandes) */
+@media (max-width: 768px) {
+  #about .title h2 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  #about .title h2 span {
+    font-size: 24px;
+  }
+
+  #about .main .my-info .content-info {
+    padding: 10px;
+  }
+
+  #about .main .my-info .content-info .btn-download a {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  #about .main .my-skills .container .inner-content {
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div {
+    width: 140px;
+    height: auto;
+    padding: 20px;
+  }
+
+  /* #about .main .experiences .experience-content .container .inner-content {
+    padding: 15px;
+    border: 1px solid red;
+  } */
+  #about .main .experiences .experience-content .container .inner-content {
+    padding: 5px;
+    /* border: 1px solid red; */
+  }
+  #about .main .experiences .experience-content .container .inner-content h4 {
+    /* border: 1px solid red; */
+    margin: 0 -12px;
+  }
+
+  #about
+    .main
+    .experiences
+    .experience-content
+    .container
+    .inner-content
+    .line-gray-vertical {
+    display: none;
+  }
+
+  #about
+    .main
+    .experiences
+    .experience-content
+    .container
+    .inner-content
+    .context {
+    padding: 0 10px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  #about .title h2 {
+    font-size: 18px;
+    
+  }
+
+  #about .title h2 span {
+    font-size: 20px;
+  }
+
+  #about .main .my-info .content-info .inner-text h4 {
+    font-size: 13px;
+  }
+
+  #about .main .my-info .content-info div span {
+    font-size: 12px;
+  }
+
+  #about .main .my-skills h4,
+  #about .main .experiences .experience-content .title-experience {
+    font-size: 12px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div h1 {
+    font-size: 13px;
+  }
+
+  #about .main .my-skills .container .inner-content .grid div label {
+    font-size: 12px;
+  }
+
+  #about
+    .main
+    .experiences
+    .experience-content
+    .container
+    .inner-content
+    .icon {
+    font-size: 12px;
+  }
+
+  #about
+    .main
+    .experiences
+    .experience-content
+    .container
+    .inner-content
+    .title {
+    font-size: 13px;
+  }
+
+  #about
+    .main
+    .experiences
+    .experience-content
+    .container
+    .inner-content
+    .context
+    p {
+    font-size: 12px;
+  }
 }

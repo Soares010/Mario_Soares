@@ -23,7 +23,7 @@
   justify-content: center;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0 ;
+  animation-range: entry 0;
 }
 
 #contact .container .content {
@@ -160,16 +160,139 @@
   .button-send
   button
   span:hover {
- background: #fff;
-    color: #8f40e9;
+  background: #fff;
+  color: #8f40e9;
 }
-@keyframes appear{
-  from{
+@keyframes appear {
+  from {
     opacity: 0;
-    scale: .5;
+    scale: 0.5;
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+/* Telas até 1024px (tablets) */
+@media (max-width: 1024px) {
+  .inner-content {
+    height: auto;
+    padding: 20px;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .container .content {
+    max-width: 90%;
+  }
+
+  #contact .container .content .inner-text {
+    width: 100%;
+  }
+
+  #contact .container .content form .input-box .input-field textarea {
+    width: 100%;
+  }
+}
+
+/* Telas até 768px (celulares grandes) */
+@media (max-width: 768px) {
+  #contact .title h2 {
+    font-size: 22px;
+  }
+
+  #contact .title h2 span {
+    font-size: 24px;
+  }
+
+  #contact .container .content {
+    padding: 10px;
+  }
+
+  #contact .container .content .inner-text {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #contact .container .content form .input-box {
+    flex-direction: column;
+  }
+
+  #contact .container .content form .input-box .input-field {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #contact .container .content form .input-box .input-field textarea {
+    height: 120px;
+  }
+
+  #contact
+    .container
+    .content
+    form
+    .input-box
+    .input-field
+    .button-send
+    button {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  #contact .title h2 {
+    font-size: 18px;
+  }
+
+  #contact .title h2 span {
+    font-size: 20px;
+  }
+
+  #contact .container .content .inner-text h4 {
+    font-size: 14px;
+  }
+
+  #contact .container .content .inner-text p {
+    font-size: 12px;
+  }
+
+  #contact .container .content form .input-box .input-field span {
+    font-size: 11px;
+  }
+
+  #contact .container .content form .input-box .input-field input,
+  #contact .container .content form .input-box .input-field textarea {
+    font-size: 13px;
+  }
+
+  #contact
+    .container
+    .content
+    form
+    .input-box
+    .input-field
+    .button-send
+    button {
+    font-size: 10px;
+  }
+
+  #contact
+    .container
+    .content
+    form
+    .input-box
+    .input-field
+    .button-send
+    button
+    span {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
   }
 }
