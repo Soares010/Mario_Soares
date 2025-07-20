@@ -25,7 +25,6 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setShow(true);
     const timer = setTimeout(() => setShow(true), 300); // atraso leve
     return () => clearTimeout(timer);
   }, []);
