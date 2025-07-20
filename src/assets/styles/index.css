@@ -15,6 +15,7 @@ body {
     rgb(30, 50, 90),
     rgb(70, 100, 150)
   );
+  overflow-x: hidden;
   z-index: 1;
   /* background: #09122c; */
   font-family: "poppins", sans-serif;
