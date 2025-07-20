@@ -37,7 +37,7 @@ const About = () => {
                   </div>
                   <div>
                     <span>
-                      Primeiro Nome: <label>Mário</label>{" "}
+                      Primeiro Nome: <label>Mário</label>
                     </span>
                   </div>
                   <div>
@@ -100,8 +100,8 @@ const About = () => {
                     <span>---- Trabalhos Freelancer</span>
                   </div>
                   <div>
-                    <h1>12+</h1>
-                    <span>---- Anos de experiência</span>
+                    <h1>8+</h1>
+                    <span>---- Formações em Tecnologias</span>
                   </div>
                 </div>
               </div>

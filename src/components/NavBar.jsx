@@ -70,7 +70,7 @@ const NavBar = () => {
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="https://www.instagram.com/">
               <FontAwesomeIcon
                 icon={faInstagram}
                 style={{ color: "rgb(225, 48, 108)" }}
