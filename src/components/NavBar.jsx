@@ -26,6 +26,8 @@ const NavBar = () => {
 
   useEffect(() => {
     setShow(true);
+    const timer = setTimeout(() => setShow(true), 300); // atraso leve
+    return () => clearTimeout(timer);
   }, []);
 
   const [text] = useTypewriter({
@@ -108,7 +110,7 @@ const NavBar = () => {
           <div className="name-title">
             {show && (
               <h4>
-                Eu sou <span>{text}</span>
+                Eu sou <span> {text}</span>
                 <span style={{ color: "#8f40e9" }}>
                   <Cursor />
                 </span>

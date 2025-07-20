@@ -148,7 +148,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 }
@@ -225,7 +225,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 }
@@ -251,7 +251,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 }
@@ -278,7 +278,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 }
@@ -294,7 +294,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 
@@ -317,7 +317,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 
@@ -341,7 +341,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 
@@ -365,7 +365,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 
@@ -389,7 +389,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 14px;
   }
 
@@ -412,7 +412,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 12px;
   }
 
@@ -436,7 +436,7 @@
     /* border: 1px solid red; */
     overflow-x: auto;
     width: 100%;
-    word-break: break-word;
+    white-space: nowrap;
     font-size: 12px;
   }
 
