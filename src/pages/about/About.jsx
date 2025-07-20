@@ -101,7 +101,7 @@ const About = () => {
                   </div>
                   <div>
                     <h1>8+</h1>
-                    <span>---- Formações em Tecnologias</span>
+                    <span>---- Formações</span>
                   </div>
                 </div>
               </div>
