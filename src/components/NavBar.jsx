@@ -23,8 +23,7 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // setShow(true);
-    const timer = setTimeout(() => setShow(true), 300); // atraso leve
+    const timer = setTimeout(() => setShow(true), 300);
     return () => clearTimeout(timer);
   }, []);
 
@@ -35,6 +34,7 @@ const NavBar = () => {
     deleteSpeed: 80,
     delaySpeed: 1500,
   });
+  
   const links = [
     {
       id: 1,
@@ -110,7 +110,9 @@ const NavBar = () => {
             {show && (
               <h4>
                 Eu sou <span> {text}</span>
-                <span style={{ color: "#8f40e9" }}>{/* <Cursor /> */}</span>
+                <span style={{ color: "#8f40e9" }}>
+                  <Cursor />
+                </span>
               </h4>
             )}
             <div>

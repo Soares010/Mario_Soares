@@ -105,7 +105,7 @@ const About = () => {
                     <span>---- Trabalhos Freelancer</span>
                   </div>
                   <div>
-                    <h1>8+</h1>
+                    <h1>08+</h1>
                     <span>---- Formações</span>
                   </div>
                 </div>

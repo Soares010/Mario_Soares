@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Container from "../../components/Container";
 import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
@@ -19,6 +19,7 @@ const Contact = () => {
   const [data, setData] = useState([]);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  const inputName = useRef();
 
   useEffect(() => {
     const notify = () => {
@@ -63,13 +64,6 @@ const Contact = () => {
     emailjs
       .send(serviceId, templateId, data, apiPublicKey)
       .then((response) => {
-        setData((data) => ({
-          ...data,
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        }));
         setSuccess("E-mail enviado com sucesso!");
       })
       .catch((error) => setError("Ocorreu um erro ao enviar e-mail!"));
