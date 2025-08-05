@@ -19,7 +19,6 @@ const Contact = () => {
   const [data, setData] = useState([]);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
-  const inputName = useRef();
 
   useEffect(() => {
     const notify = () => {
@@ -60,6 +59,11 @@ const Contact = () => {
     const serviceId = "soaresservice10";
     const templateId = "soares_10";
     const apiPublicKey = "3qxeZrbzyEgTygebO";
+
+    if (!data.name?.trim() || !data.subject?.trim() || !data.message?.trim()) {
+      setError("Por favor, preencha todos os campos obrigatórios.");
+      return;
+    }
 
     emailjs
       .send(serviceId, templateId, data, apiPublicKey)
